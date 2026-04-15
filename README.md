@@ -17,6 +17,28 @@ Two starter plugins are included:
 
 To add more plugins, see `docs/add-a-plugin.md`.
 
+## How to install
+
+To test plugins locally in Cursor, sync them into `~/.cursor/plugins/local` with the helper script:
+
+```bash
+./scripts/sync-local-plugins.sh install
+```
+
+If needed, make the script executable first:
+
+```bash
+chmod +x scripts/sync-local-plugins.sh
+```
+
+Selected plugins are copied into `~/.cursor/plugins/local`, overwriting any existing local copies with the same name.
+
+To remove locally installed plugins listed in this repo, run:
+
+```bash
+./scripts/sync-local-plugins.sh uninstall
+```
+
 ## Single plugin vs multi-plugin
 
 This template defaults to **multi-plugin** (multiple plugins in one repo).
