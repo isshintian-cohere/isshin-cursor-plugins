@@ -1,0 +1,24 @@
+---
+name: commit-push-pr
+description: Commit the current changes, push the branch, and open a pull request.
+---
+
+# Commit, push, and open a PR
+
+Complete the full git workflow for the current worktree.
+
+## Steps
+
+1. Inspect the current git status, staged and unstaged diff, branch tracking state, recent commits, and the branch diff from its base branch.
+2. Create a new branch if needed before committing.
+3. Stage the relevant files and create a single commit with a message that matches the repository's style.
+4. Push the current branch to `origin`, setting upstream if needed.
+5. Create a pull request with a concise summary and test plan, then return the PR URL.
+
+## Guardrails
+
+- Never force push.
+- Never change git config.
+- Do not amend unless the user explicitly asked for it.
+- Do not include likely secrets in the commit.
+- If there is nothing new to commit, continue with push and PR creation only if the branch already contains the intended changes.

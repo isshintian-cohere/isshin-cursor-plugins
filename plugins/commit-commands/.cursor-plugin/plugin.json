@@ -1,0 +1,11 @@
+{
+  "name": "commit-commands",
+  "displayName": "Commit Commands",
+  "version": "1.0.0",
+  "description": "Slash commands for committing changes, pushing branches, opening pull requests, and cleaning up gone branches.",
+  "author": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "keywords": ["cursor", "plugin", "commands", "git", "github", "pull-request"]
+}

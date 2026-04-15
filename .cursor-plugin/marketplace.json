@@ -1,11 +1,11 @@
 {
   "name": "cursor-plugin-starters",
   "owner": {
-    "name": "Your Org",
-    "email": "plugins@example.com"
+    "name": "Isshin Tian",
+    "email": "yixin.tian@cohere.com"
   },
   "metadata": {
-    "description": "Starter marketplace template for Cursor plugins",
+    "description": "A set of custom Cursor plugins used by Isshin",
     "version": "0.1.0",
     "pluginRoot": "plugins"
   },
@@ -19,6 +19,16 @@
       "name": "starter-advanced",
       "source": "./plugins/starter-advanced",
       "description": "Full-featured plugin with rules, skills, agents, commands, hooks, and MCP"
+    },
+    {
+      "name": "learning-output-style",
+      "source": "./plugins/learning-output-style",
+      "description": "Interactive learning mode that requests meaningful code contributions at decision points"
+    },
+    {
+      "name": "commit-commands",
+      "source": "./plugins/commit-commands",
+      "description": "Git workflow slash commands for commit, push, PR creation, and gone-branch cleanup"
     }
   ]
 }
