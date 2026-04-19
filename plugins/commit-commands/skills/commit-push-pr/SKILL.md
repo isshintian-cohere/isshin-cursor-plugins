@@ -13,7 +13,7 @@ Complete the full git workflow for the current worktree.
 2. Create a new branch if needed before committing.
 3. Stage the relevant files and create a single commit with a message that matches the repository's style.
 4. Push the current branch to `origin`, setting upstream if needed.
-5. Create a pull request with a concise summary and test plan, then return the PR URL.
+5. Create a pull request using [references/pull_request_template.md](references/pull_request_template.md). Make sure to fill out "Description of the PR" at the top and "AI Description".
 
 ## Guardrails
 
