@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "description": "Slash commands for committing changes, pushing branches, opening pull requests, and cleaning up gone branches.",
   "author": {
-    "name": "Anthropic",
-    "email": "support@anthropic.com"
+    "name": "Isshin Tian",
+    "email": "yixin.tian@cohere.com"
   },
   "keywords": ["cursor", "plugin", "commands", "git", "github", "pull-request"]
 }

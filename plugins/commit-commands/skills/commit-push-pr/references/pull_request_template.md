@@ -1,6 +1,4 @@
-<!--
-  Description of the PR.
--->
+<!-- One-paragraph summary of what this PR is about. -->
 
 <!--
 You will need to provide the emergency bypass reason in the following format for cherry picks into the release environment, if the ticket neither of "internal_regression" or "escaped_regression".
@@ -32,11 +30,5 @@ EMERGENCY - BYPASS - REASON: <bypass reason>
 **AI Description**
 
 <!-- begin-generated-description -->
-
-<!--
-  New: command-r-plus will maintain a pr description for you!
-  Simply delete this section to opt out.
-  Content inside this section will be overwritten by command as the PR is updated.
--->
 
 <!-- end-generated-description -->
