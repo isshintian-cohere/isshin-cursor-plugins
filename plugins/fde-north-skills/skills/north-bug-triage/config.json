@@ -1,0 +1,27 @@
+{
+  "environments": {
+    "local": {
+      "north_ui": "http://localhost:4000",
+      "admin_ui": "http://localhost:5001/admin/",
+      "postgres": "postgresql://postgres:postgres@localhost:5432/north",
+      "openfga": "http://localhost:8080",
+      "inngest": "http://localhost:8288"
+    },
+    "staging": {
+      "north_ui": "https://stg.demo.cloud.cohere.com/",
+      "admin_ui": "https://stg.demo.cloud.cohere.com/admin/"
+    }
+  },
+  "defaults": {
+    "linear_workspace": "cohere",
+    "browser": "chrome"
+  },
+  "paths": {
+    "_note": "Replace {issue_id} with lowercase Linear issue ID (e.g., fde-123)",
+    "triage_root": ".triage-artifacts-{issue_id}",
+    "support_bundles": ".triage-artifacts-{issue_id}/bundles",
+    "playwright_artifacts": ".triage-artifacts-{issue_id}/playwright",
+    "linear_context": ".triage-artifacts-{issue_id}/linear-context.md",
+    "report": ".triage-artifacts-{issue_id}/REPORT.md"
+  }
+}

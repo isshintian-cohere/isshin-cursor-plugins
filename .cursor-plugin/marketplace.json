@@ -29,6 +29,11 @@
       "name": "commit-commands",
       "source": "./plugins/commit-commands",
       "description": "Git workflow slash commands for commit, push, PR creation, and gone-branch cleanup"
+    },
+    {
+      "name": "fde-north-skills",
+      "source": "./plugins/fde-north-skills",
+      "description": "FDE skills for triaging and fixing North bugs: Linear investigation, Playwright reproduction, support bundle analysis, and end-to-end fix validation"
     }
   ]
 }

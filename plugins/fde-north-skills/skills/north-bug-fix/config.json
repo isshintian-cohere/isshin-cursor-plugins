@@ -1,0 +1,18 @@
+{
+  "defaults": {
+    "browser": "chrome"
+  },
+  "requirements": {
+    "triage_report_required": true,
+    "playwright_validation_required": true,
+    "missing_report_instruction": "Stop and tell the user to run north-bug-triage first to generate .triage-artifacts-{issue_id}/REPORT.md."
+  },
+  "paths": {
+    "_note": "Replace {issue_id} with lowercase Linear issue ID (e.g., fde-123)",
+    "triage_root": ".triage-artifacts-{issue_id}",
+    "triage_report": ".triage-artifacts-{issue_id}/REPORT.md",
+    "fix_root": ".triage-artifacts-{issue_id}/fix",
+    "fix_report": ".triage-artifacts-{issue_id}/fix/FIX_REPORT.md",
+    "playwright_artifacts": ".triage-artifacts-{issue_id}/playwright"
+  }
+}
