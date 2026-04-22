@@ -1,29 +1,38 @@
-# FDE Cursor Plugins
+# Cursor FDE Team Marketplace
 
-Build and publish Cursor Marketplace plugins from a single repo.
+Build and publish Cursor Marketplace plugins for FDE team from a single repo. The repo already contains a few useful plugins:
+
+- `commit-commands`: Facilitate git commits, cleaning up stale local branches with merged upstream, and e2e commit push and then create a draft PR using North's git PR template.
+- `north-debug-kit`: North debugging skills for triage, Playwright reproduction, support bundle analysis, and end-to-end fix validation
+- `learning-output-style`: Interactive learning mode via a `sessionStart` hook (extra session instructions; optional).
+
+## Prerequisites
+
+Some plugins need external tools or skills that are not bundled in the plugins. Install them alongside the plugin they apply to.
+
+### `north-debug-kit`
+
+**Runtime dependencies**
+
+- The North stack running locally (`localhost:4000` for the UI, `localhost:5001/admin/` for Admin UI), or staging access.
+
+**External tools/skills to install separately**
+
+- Python 3 on `PATH` for `north-bug-triage/scripts/fetch_linear_context.py`.
+- `ffmpeg` on `PATH` (or reachable via `npx playwright install ffmpeg`) for video capture.
+- `playwright-cli` available globally or via `npx` — `north-ui-driver`'s `start_session.sh` auto-detects which.
+- `linear-cli` used to fetch/refresh Linear issue data and list/download attachments. Without it, you can still run triage by supplying Linear context manually or via Linear MCP, but `scripts/fetch_linear_context.sh` will fail. (Install both CLI and the skill following [the guide](https://github.com/schpet/linear-cli))
+
+### `commit-commands`
+- GitHub CLI `gh` + `git`
 
 ## Getting started
 
-[Use this template](https://github.com/cursor/plugin-template/generate) to create a new repository, then customize:
-
-1. `.cursor-plugin/marketplace.json`: set marketplace `name`, `owner`, and `metadata`.
-2. `plugins/*/.cursor-plugin/plugin.json`: set `name` (lowercase kebab-case), `displayName`, `author`, `description`, `keywords`, `license`, and `version`.
-3. Replace placeholder rules, skills, agents, commands, hooks, scripts, and logos.
-
-To add more plugins, see `docs/add-a-plugin.md`.
-
-## How to install
-
-To test plugins locally in Cursor, sync them into `~/.cursor/plugins/local` with the helper script:
-
-```bash
-./scripts/sync-local-plugins.sh install
-```
-
-If needed, make the script executable first:
+To install plugins locally in Cursor, sync them into `~/.cursor/plugins/local` with the helper script:
 
 ```bash
 chmod +x scripts/sync-local-plugins.sh
+./scripts/sync-local-plugins.sh install
 ```
 
 Selected plugins are copied into `~/.cursor/plugins/local`, overwriting any existing local copies with the same name.

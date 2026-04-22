@@ -1,0 +1,11 @@
+{
+  "paths": {
+    "_note": "When called from north-bug-triage, {issue_id} is the Linear issue id in lowercase (e.g. fde-123). For standalone use, substitute any descriptive {name} for the bundle folder.",
+    "ticket_bundle_dir": ".triage-artifacts-{issue_id}/bundles",
+    "standalone_bundle_dir": ".bundle-analysis/{name}",
+    "standalone_report": ".bundle-analysis/{name}/bundle-analysis.md"
+  },
+  "conventions": {
+    "secret_paths_to_avoid": ["secrets/", "secrets-errors/"]
+  }
+}

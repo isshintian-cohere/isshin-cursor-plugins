@@ -1,0 +1,21 @@
+{
+  "environments": {
+    "local": {
+      "north_ui": "http://localhost:4000",
+      "admin_ui": "http://localhost:5001/admin/"
+    },
+    "staging": {
+      "north_ui": "https://stg.demo.cloud.cohere.com/",
+      "admin_ui": "https://stg.demo.cloud.cohere.com/admin/"
+    }
+  },
+  "defaults": {
+    "browser": "chrome"
+  },
+  "paths": {
+    "_note": "Default output layout when called from north-bug-triage or north-bug-fix. Standalone callers may substitute any directory.",
+    "session_output": ".triage-artifacts-{session}/playwright",
+    "profile": ".triage-artifacts-{session}/playwright/profile",
+    "video": ".triage-artifacts-{session}/playwright/{session}-{timestamp}.webm"
+  }
+}

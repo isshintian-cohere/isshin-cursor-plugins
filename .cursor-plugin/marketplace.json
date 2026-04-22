@@ -1,25 +1,15 @@
 {
   "name": "cursor-plugin-starters",
   "owner": {
-    "name": "Isshin Tian",
-    "email": "yixin.tian@cohere.com"
+    "name": "FDE Agentic Platform Enablement",
+    "email": "fde-agentic-platform-department@cohere.com"
   },
   "metadata": {
-    "description": "A set of custom Cursor plugins used by Isshin",
+    "description": "A set of useful Cursor plugins curated by FDE Agentic Platform Enablement Team",
     "version": "0.1.0",
     "pluginRoot": "plugins"
   },
   "plugins": [
-    {
-      "name": "starter-simple",
-      "source": "./plugins/starter-simple",
-      "description": "Minimal plugin with rules and skills only"
-    },
-    {
-      "name": "starter-advanced",
-      "source": "./plugins/starter-advanced",
-      "description": "Full-featured plugin with rules, skills, agents, commands, hooks, and MCP"
-    },
     {
       "name": "learning-output-style",
       "source": "./plugins/learning-output-style",
@@ -31,9 +21,9 @@
       "description": "Git workflow slash commands for commit, push, PR creation, and gone-branch cleanup"
     },
     {
-      "name": "fde-north-skills",
-      "source": "./plugins/fde-north-skills",
-      "description": "FDE skills for triaging and fixing North bugs: Linear investigation, Playwright reproduction, support bundle analysis, and end-to-end fix validation"
+      "name": "north-debug-kit",
+      "source": "./plugins/north-debug-kit",
+      "description": "North debugging skills for triage, Playwright reproduction, support bundle analysis, and end-to-end fix validation"
     }
   ]
 }

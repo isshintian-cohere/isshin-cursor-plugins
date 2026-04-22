@@ -1,8 +1,6 @@
 # Commit Commands
 
-Cursor port of the Claude Code `commit-commands` plugin.
-
-This plugin adds three slash commands for common git workflows so you can stay in the chat instead of manually stitching together git and GitHub CLI commands.
+This plugin is based on Claude Code's `commit-commands` plugin, adapted to Cursor's plugin format and conventions with minor North-specific tweaks. It contains three skills for common git workflows so you can stay in the chat instead of manually stitching together git and GitHub CLI commands.
 
 ## Commands
 
@@ -17,7 +15,7 @@ Handles the full branch workflow:
 1. Create a branch if needed
 2. Commit the current work
 3. Push to `origin`
-4. Open a pull request with a summary and test plan
+4. Open a draft pull request based on the [North PR template](skills/commit-push-pr/references/pull_request_template.md).
 
 ### `/clean_gone`
 

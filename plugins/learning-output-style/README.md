@@ -1,6 +1,6 @@
 # Learning Output Style
 
-This plugin adds a native Cursor `sessionStart` hook that enables an interactive learning mode with brief educational explanations.
+This plugin is adapted from [Boris Cherny's original plugin](https://github.com/anthropics/claude-code/tree/main/plugins/learning-output-style). It adds a native Cursor `sessionStart` hook that enables an interactive learning mode with brief educational explanations.
 
 Warning: this plugin adds extra session instructions, so only enable it if you want the additional token cost and the more hands-on workflow.
 

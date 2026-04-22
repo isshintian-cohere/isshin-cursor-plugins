@@ -14,6 +14,7 @@ Complete the full git workflow for the current worktree.
 3. Stage the relevant files and create a single commit with a message that matches the repository's style.
 4. Push the current branch to `origin`, setting upstream if needed.
 5. Create a **draft** pull request (`gh pr create --draft`) using [references/pull_request_template.md](references/pull_request_template.md).
+    - Note: The template is sourced from https://github.com/cohere-ai/north/blob/main/.github/pull_request_template.md
 
 ## Guardrails
 

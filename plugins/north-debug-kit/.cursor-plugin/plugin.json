@@ -1,0 +1,11 @@
+{
+  "name": "north-debug-kit",
+  "displayName": "North Debug Kit",
+  "version": "1.0.0",
+  "description": "Toolkit for triaging and fixing North bugs: investigate Linear issues, reproduce UI/Admin UI failures in a headed Playwright browser, analyze support bundles, and validate fixes end-to-end.",
+  "author": {
+    "name": "Isshin Tian",
+    "email": "yixin.tian@cohere.com"
+  },
+  "keywords": ["cursor", "plugin", "skills", "north", "cohere", "bug-triage", "bug-fix", "playwright", "linear"]
+}
